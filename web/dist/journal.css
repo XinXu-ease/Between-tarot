@@ -53,8 +53,8 @@
 .journal-filter-button:focus-visible{outline:1px solid var(--gold);outline-offset:2px}
 .journal-filter-chevron{width:7px;height:7px;display:block;margin-top:-3px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);transition:transform 160ms ease,margin 160ms ease}
 .journal-filter-button[aria-expanded="true"] .journal-filter-chevron{margin-top:3px;transform:rotate(225deg)}
-.journal-topic-menu{position:absolute;top:calc(100% + 7px);right:0;z-index:5;width:178px;padding:6px;border:1px solid var(--line);background:#0d1320;box-shadow:var(--shadow-card)}
-.journal-topic-menu button{width:100%;display:flex;align-items:center;justify-content:space-between;min-height:38px;padding:8px 10px;border:0;background:transparent;color:var(--muted);font:var(--type-sm) "DM Sans",sans-serif;text-align:left}
+.journal-topic-menu{position:absolute;top:calc(100% + 7px);right:0;z-index:5;width:136px;padding:5px;border:1px solid var(--line);background:#0d1320;box-shadow:var(--shadow-card)}
+.journal-topic-menu button{width:100%;display:block;min-height:36px;padding:7px 9px;border:0;background:transparent;color:var(--muted);font:var(--type-sm) "DM Sans",sans-serif;text-align:left}
 .journal-topic-menu button:hover,.journal-topic-menu button:focus-visible{background:rgba(244,241,233,.06);color:var(--cream);outline:none}
 .journal-topic-menu button.selected{color:var(--gold)}
 .journal-filter-empty{margin-top:0}

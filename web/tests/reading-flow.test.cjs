@@ -192,7 +192,10 @@ test('Journal records can be sorted by time and filtered by topic', () => {
   assert.equal(t.$('#journal-topic-menu').hidden, true);
   t.click('#journal-filter-toggle');
   assert.equal(t.$('#journal-filter-toggle').getAttribute('aria-expanded'), 'true');
-  assert.deepEqual([...t.document.querySelectorAll('[data-journal-topic]')].map(option => option.textContent.trim()), ['All topics✓', 'Love', 'Career', 'Self', 'General', 'Other']);
+  assert.deepEqual([...t.document.querySelectorAll('[data-journal-topic]')].map(option => option.textContent.trim()), ['All topics', 'Love', 'Career', 'Self', 'General', 'Other']);
+  t.click('#journal-filter-toggle');
+  assert.equal(t.$('#journal-topic-menu').hidden, true, 'Clicking Topic again closes the menu');
+  assert.equal(t.$('#journal-filter-toggle').getAttribute('aria-expanded'), 'false');
 
   t.click('#journal-sort');
   assert.deepEqual(ids(), ['unfiled', 'oldest', 'middle', 'newest']);
