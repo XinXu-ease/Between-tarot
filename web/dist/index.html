@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Between — tarot for reflection." />
+  <title>Between — Tarot for Reflection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="journal.css" />
+  <link rel="stylesheet" href="draw.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <header class="site-header"><a href="#home" class="brand" data-nav="home">between<span>·</span></a><nav aria-label="Primary navigation"><button data-nav="home">Home</button><button data-nav="reading">Reading</button><button data-nav="journal">Journal</button></nav><div class="status">Read the cards. Reflect inward. Move with intention.</div></header>
+  <main id="app" class="app" tabindex="-1"></main>
+  <template id="card-template"><button class="tarot-card" type="button"><span class="card-inner"><span class="card-back"><img src="assets/tarot/CardBacks.png" alt="" /></span></span></button></template>
+  <script src="app.js"></script>
+</body>
+</html>
